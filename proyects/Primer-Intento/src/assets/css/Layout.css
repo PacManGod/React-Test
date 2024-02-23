@@ -1,0 +1,120 @@
+nav {
+    background: linear-gradient(77deg, #00a326, #008139);
+    padding: 10px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav__logo img {
+    max-width: 260px;
+}
+
+.menu-nav__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0px 10px;
+}
+
+.menu-nav__item {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.menu-nav__item:hover {
+    background-color: #0056b3;
+}
+
+.menu-nav__lista li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toggleFooterBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    /* Ajusta el tamaño del icono según sea necesario */
+}
+
+.contPag {
+    padding: 10px;
+}
+
+.footerVisible {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footerHidden {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.cont-Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columna {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contactoFooter {
+    margin-top: 10px;
+}
+
+.contactoFooter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contactoFooter label a {
+    color: #fff;
+}
+
+.logoAlianza img {
+    width: 310px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .cont-Footer {
+        flex-direction: column;
+    }
+
+    .columna {
+        flex: 1 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

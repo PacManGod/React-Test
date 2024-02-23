@@ -1,0 +1,36 @@
+.cont-Info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #f2f2f2;
+}
+
+.cont-Info__Texto{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.cont-Info__Btns {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.cont-Info__Btns :hover {
+    background-color: #f2f2f2;
+    color: #000;
+    transition: 0.3s;
+}
